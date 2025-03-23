@@ -1,17 +1,28 @@
 {
+  "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "allowJs": true,
+    "jsx": "react-native",
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+      "@firebase/auth": ["node_modules/@firebase/auth/dist/index.rn.d.ts"],
+      "@/*": ["./app/*"]
+    },
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "app/(protected)/(tabs)/book.js"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
