@@ -13,14 +13,19 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "types": [
+      "node",
+      "@types/babel__traverse"
+    ]
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "app/(protected)/(tabs)/book.js"
+    "app/(protected)/(tabs)/book.js",
+    "app.config.ts"
   ],
   "exclude": [
     "node_modules"

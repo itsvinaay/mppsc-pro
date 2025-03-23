@@ -51,7 +51,11 @@
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/6c4279ad-04da-45d2-8804-63fe4c929972"
-    }
+      "url": "https://u.expo.dev/6c4279ad-04da-45d2-8804-63fe4c929972",
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+    "owner": "viralytrespect"
   }
 }
